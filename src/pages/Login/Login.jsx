@@ -87,7 +87,7 @@ password:zod.string().regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za
            <div className='flex justify-between items-baseline   px-3 mt-10'>
 <div className="btn"><button className='botn'  disable={BtnIsLoading}>{BtnLoading?<SyncLoader color="#ffcc24a0" />:"Sign in"}</button></div>
     
-     <div className='font-bold  text-2xl text-amber-500 ps-2 pb-4 '>Already have an account?<Link to={'/'} ><span className='underline block hover:scale-125 transform transition-all duration-300 ml-2'>Sign up</span></Link></div>
+     <div className='font-bold  text-2xl text-amber-500 ps-2 pb-4 '>Already have an account?<Link to={'/Register'} ><span className='underline block hover:scale-125 transform transition-all duration-300 ml-2'>Sign up</span></Link></div>
       </div>
       </form>
       </div>
