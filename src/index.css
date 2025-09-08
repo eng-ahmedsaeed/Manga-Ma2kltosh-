@@ -1,0 +1,92 @@
+@import "tailwindcss";
+    /*//https://colorhunt.co/palette/feffd2ffeea9ffbf78ff7d29
+*/
+    @layer utility{
+      .container {
+    width: 100%;
+    @media (width >= 40rem /* 640px */) {
+        max-width: 40rem /* 640px */;
+    }
+    @media (width >= 48rem /* 768px */) {
+        max-width: 48rem /* 768px */;
+    }
+    @media (width >= 64rem /* 1024px */) {
+        max-width: 80rem /* 1024px */;
+    }
+    @media (width >= 80rem /* 1280px */) {
+        max-width: 100rem /* 1280px */;
+    }
+    @media (width >= 96rem /* 1536px */) {
+        max-width: 120rem /* 1536px */;
+    }
+      }
+          .formcontainer {
+    width: 80%;
+    @media (width >= 40rem /* 640px */) {
+        max-width: 40rem /* 640px */;
+    }
+    @media (width >= 48rem /* 768px */) {
+        max-width: 48rem /* 768px */;
+    }
+    @media (width >= 64rem /* 1024px */) {
+        max-width: 64rem /* 1024px */;
+    }
+    @media (width >= 80rem /* 1280px */) {
+        max-width: 90rem /* 1280px */;
+    }
+    @media (width >= 96rem /* 1536px */) {
+        max-width: 100rem /* 1536px */;
+    }
+      }
+          .postcontainer {
+    width: 60%;
+    @media (width >= 40rem /* 640px */) {
+        max-width: 40rem /* 640px */;
+    }
+    @media (width >= 48rem /* 768px */) {
+        max-width: 48rem /* 768px */;
+    }
+    @media (width >= 64rem /* 1024px */) {
+        max-width: 64rem /* 1024px */;
+    }
+    @media (width >= 80rem /* 1280px */) {
+        max-width: 90rem /* 1280px */;
+    }
+    @media (width >= 96rem /* 1536px */) {
+        max-width: 100rem /* 1536px */;
+    }
+      }
+    }
+
+
+    @layer components
+    {
+        .formLabel{
+
+            @apply w-full font-bold  text-2xl text-amber-500 ps-2 pb-4 
+        }
+        .formInput
+        {
+            @apply w-full p-2 rounded-3xl outline-amber-300 bg-white
+        }
+
+
+        .botn{
+            @apply px-4 py-3 bg-amber-100 rounded-4xl  text-amber-400  text-2xl font-bold active:scale-125
+        }
+        .errorMessage{
+            @apply  py-1  text-amber-400   font-bold 
+        }
+        .NavBarTextCustmizations
+        {
+            @apply  lg:flex text-amber-500 sm:text-2xl font-sans font-extrabold
+        }
+        .postInfo
+        {
+            @apply text-amber-300 font-bold text-2xl
+        }
+        .postText
+        {
+            @apply text-amber-300  text-xl
+        }
+    }
