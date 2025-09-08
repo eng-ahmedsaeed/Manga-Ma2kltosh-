@@ -1,14 +1,13 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import Post from '../Posts/posts';
+
 import { useQuery } from '@tanstack/react-query';
 import { useContext } from 'react';
 import TokenCont from "../../component/Token/TokenProvider.Context";
-import { Loader } from 'lucide-react';
+
 import axios, { Axios } from "axios";
 import Poster from "../Poster/Poster"
-import Comment from '../Comment/comment';
-import { BounceLoader } from "react-spinners";
+
 import { Toaster } from 'react-hot-toast';
 import UseUserInfo from '../../hook/userInfo/useUserInfo';
 import PostSkeleton from '../Post skeleton/post skeleton';

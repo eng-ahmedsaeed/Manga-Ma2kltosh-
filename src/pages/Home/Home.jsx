@@ -69,7 +69,7 @@ export default function Home() {
         <Posts posts={x.data.data.posts}loggedInUser={datauser} ></Posts>
         <div className="controls flex space-x-9">
         <button className="botn" onClick={()=>{
-          setPage((page)=1?1:(page-1));
+          setPage((page)===1?1:(page-1));
           queryClient.invalidateQueries(["GetAllPosts",page])
           
         }}>Previous Feed</button>

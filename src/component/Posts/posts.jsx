@@ -1,11 +1,10 @@
 
-import React, { useContext, useEffect, useState } from "react"; 
-import PostHeader from "../PostHeader/PostHeader";
-import Comment from "../Comment/comment";
-import { Link } from "react-router-dom";
+
+;
+
 import Poster from "../Poster/Poster";
 import { Toaster } from "react-hot-toast";
-import CreatPost from "../CreatePost/CreatePost";
+
 
 export default function Posts({posts,loggedInUser}) {
  
