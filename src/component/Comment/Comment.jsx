@@ -1,7 +1,7 @@
 import React from 'react'
 import PostHeader from '../PostHeader/PostHeader'
 
-export default function Comment({comment}) {
+export default function Commentcomp({comment}) {
   ////! function bet7seb 2el wa2t
   function timeAgo(dateInput) {
     const date = dateInput instanceof Date ? dateInput : new Date(dateInput);

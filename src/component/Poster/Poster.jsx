@@ -2,7 +2,7 @@
 
 import React, { useContext, useEffect, useRef, useState } from "react"; 
 import PostHeader from "../PostHeader/PostHeader";
-import Comment from "../Comment/comment";
+import Commentcomp from"../Comment/Comment"
 import { Link } from "react-router-dom";
 import TokenCont from "../Token/TokenProvider.Context";
 import axios from "axios";
@@ -191,7 +191,7 @@ onError: (err) => {
                       </div>
                     </div>
                     
-                    {postDetails?(post.comments.map((comment)=>{ return <Comment key={comment._id} comment={comment}></Comment>})):<Comment comment={[...post.comments].reverse()[0]}></Comment>}
+                    {postDetails?(post.comments.map((comment)=>{ return <Commentcomp key={comment._id} comment={comment}></Commentcomp>})):<Commentcomp comment={[...post.comments].reverse()[0]}></Commentcomp>}
 
                     <div className="addcomment flex w-full p-6 bg-[#faeece]   flex-wrap space-y-7  rounded-3xl">
                       <div className="userAvatar">
